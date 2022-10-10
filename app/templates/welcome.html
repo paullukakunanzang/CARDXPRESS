@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+{% block link %}
+<link rel="stylesheet" href="../static/styles/welcome.css">
+{% endblock %}
+    
+{% block content %}
+
+<div class="header">
+    <h1>
+        <span style="color: rgba(255, 163, 35, 1);"> WELCOME  </span> 
+        <span style="color: rgba(10, 7, 136, 1);"> TO </span> 
+        <img src="../static/img/Group 32.svg" alt="this is an img"> 
+    </h1>
+</div>
+
+<section class="hero-page">
+      
+    <div class="container">
+     <div class="card-image">
+       <img src="../static/img/MC with Silver Chip & Embossing.png" alt="" id="layer1" style="width: 30%;">
+       <img src="../static/img/MC with Silver Chip & Embossing-1.png" alt="" id="layer2" style="width: 30%;">
+      </div>
+     <h1>
+         Get Your <br> Custom <br> <span style="color: rgba(255, 163, 35, 1);">Credit/Debit</span> <br>Card
+     </h1>
+     <div class="buttons">
+        <a href="{{ url_for('register') }}" class="btn"> REGISTER</a>
+        <a href="{{ url_for('login') }}" class="btn"> LOGIN</a>
+    </div>
+ </section>
+
+ <section>
+    <div class="container">
+      <div class="section5">
+          <div class="part1">
+              <h4>Launch Card Xpress</h4>
+              <p>You can use varieties of <br> steps to launch Card <br>Xpress, either by our <br>platform or any other means.</p>
+              <a href="learn.com" class="btn" style="margin-top: 50px;"> Learn More</a>
+          </div>
+ 
+          <div class="part2">
+              <h4>Let's hear from you!</h4>
+              <p>We have sheet or <br> copies to extend to <br> customers and adhear to <br> their request. </p>
+              <a href="contact.com" class="btn" style="margin-top: 50px;">Contact Us</a>
+          </div>
+ 
+          <div class="part3">
+              <h4>Ready to begin ?</h4>
+              <p>Lets help you get started <br> while creating your account <br> and trying to enroll <br> your card.</p>
+              <a href="{{ url_for('register') }}" class="btn" style="margin-top: 55px;"> Start here</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="main-container" style="background-color: rgba(224, 214, 214, 1);">
+     <!-- #NAVBAR -->
+    <section>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../static/img/Group 32.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{ url_for('login') }}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('login') }}">Library</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('login') }}" >Our Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Contact Us</a>
+                  </li>
+                </ul>      
+              </div>
+            </div>
+          </nav>
+    </section>
+
+
+{% endblock %}

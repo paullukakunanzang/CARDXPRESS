@@ -1,0 +1,97 @@
+{% extends 'layout.html' %}
+
+{% block link %}
+<link rel="stylesheet" href="../static/styles/register.css">
+{% endblock %}
+
+{% block content %}
+    <div class="content-section">
+        <form action="" method="POST">
+            {{ form.hidden_tag() }}
+            <fieldset>
+                <legend class="header">
+                    <div class="header-img">
+                        <img src="../static/img/Group 32.svg" alt="this is an img"> 
+                    </div>
+                        <div class="header-text">
+                        <h1>
+                            <span style="color: rgba(255, 163, 35, 1);"> JOIN </span>  
+                            <span style="color: rgba(10, 7, 136, 1);"> US</span> 
+                            <span style="color: rgba(255, 163, 35, 1);"> TODAY</span> 
+                        </h1>
+                    </div>
+                </legend>
+
+                <div class="form-section">
+                    <div class="form-group">
+                        {{ form.username.label(class="form-control-label") }}
+                        
+                        {% if form.username.errors %}
+                            {{ form.username(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.username.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.username(class="form-control form-control-lg") }}
+                        {% endif %}
+
+                    </div>
+                    <div class="form-group">
+                        {{ form.email.label(class="form-control-label") }}
+
+                        {% if form.email.errors %}
+                            {{ form.email(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.email.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.email(class="form-control form-control-lg") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.password.label(class="form-control-label") }}
+                        
+                        {% if form.password.errors %}
+                            {{ form.password(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.password.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.password(class="form-control form-control-lg") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.confirm_password.label(class="form-control-label") }}
+                        
+                        {% if form.confirm_password.errors %}
+                            {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.confirm_password.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.confirm_password(class="form-control form-control-lg") }}
+                        {% endif %}
+                    </div>
+                </div>
+            </fieldset>
+            <div class="submit-section">
+                <div class="form-group">
+                    {{ form.submit(class="btn btn-outline-info") }}
+                </div>
+                <small class="text-muted">
+                    Already Have An Account? <a href="{{ url_for('login') }}" class="ml-2">Sign In</a>
+                </small>
+            </div>
+
+        </form>
+
+
+{% endblock %}

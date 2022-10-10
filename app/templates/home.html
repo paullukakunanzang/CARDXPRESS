@@ -1,0 +1,141 @@
+{% extends 'layout.html' %}
+{% include 'header.html' %}
+
+{% block link %}
+<link rel="stylesheet" href="../static/styles/main.css">
+{% endblock %}
+
+    {% block content %}
+    <section class="hero-page">
+      
+        <div class="container">
+         <div class="card-image">
+           <img src="../static/img/MC with Silver Chip & Embossing.png" alt="" id="layer1">
+           <img src="../static/img/MC with Silver Chip & Embossing-1.png" alt="" id="layer2" >
+          </div>
+         <h1>
+             Get Your <br> Card XPRESS <br> <span style="color: rgba(255, 163, 35, 1);">Credit/Debit</span> <br> Card
+         </h1>
+         <a href="" class="btn" id="design-btn"> Enroll</a>
+         <a href="" class="btn" id="design-btn"> Renew card</a>
+        </div>
+     </section>
+     <section class="hero-content">
+       <div class="hero-text">
+       <p>
+           <b>
+             <span style="color: rgba(10, 7, 136, 1) ;">Customize your credit card design</span>
+           </b> <br> <br>
+       Create a differentiated card design using your logo, pattern,
+        or background unique to your brand or company.
+        
+       </p>
+       <p>
+       <b>
+         <span style="color: rgba(10, 7, 136, 1) ;">Experiment in a self-service manner </span>
+       </b><br> <br>
+         Illustrate your unique prototype before having to speak with Card Xpress <br> workers.
+          
+       </p>
+       <p>
+        <b>
+         <span style="color:  rgba(10, 7, 136, 1);">Leverage power of the Card Xpress brand and features</span>
+        </b> <br> <br>
+         Utilize Card Xpress-approved designs and explore how our 
+         services can enhance your cardholder's experience.
+          
+       </p>
+       <p>
+        <b> <span style="color:rgba(10, 7, 136, 1) ;">Prospective enhancements</span></b> <br> <br>
+         Keep checking back, <br> there are more features <br> coming soon.  Card Xpress <br> will make sure it improves <br> all properties.
+          
+       </p>
+    
+       </div>
+     </section>
+     <!-- #USER-INSTRUCTIONS -->
+     <section style="background-color: rgba(224, 214, 214, 1);">
+         <div class="container-2">
+           <div class="Use-intructions" >
+             <img src="../static/img/Group 63.png" alt="" style="width: 40%;">
+             <ul>
+               <h1 style="color: rgba(26, 30, 117, 1) ;">
+                 WHAT IS 
+               </h1>
+               <img src="../static/img/Group 32.svg" alt="" style="margin-left: 140px;">
+               <li>
+                Simple bank account that allows custom design
+               </li>
+               <li>
+                Normal banking at reduced rates Account number
+               </li>
+               <li>
+                Debit orders Online banking  
+               </li>
+               <li>
+                Incentive management system 
+               </li>
+               <li>
+                <a href="" style="color: rgba(26, 30, 117, 1);">Follow</a> us on our social media accounts. 
+               </li>
+               <li>
+                 <a href="" style="color: rgba(26, 30, 117, 1);;">Refer</a> CardXpress to friends and family.
+               </li>
+             </ul>
+           </div>
+         </div>
+         
+     </section>
+     <!-- #Footer -->
+     <section>
+       <div class="container">
+         <div class="section5">
+             <div class="part1">
+                 <h4>INSURANCE PRODUCTS</h4>
+                 <p>Life, disability, dread disease,<br> income protection and funeral <br> cover, individual retirement <br> and pension schemes, <br> educational, off-shore, <br> medium and long term <br> investments as well as wills <br> and trusts.</p>
+                 <a href="learn.com" class="btn"> Learn More</a>
+             </div>
+    
+             <div class="part2">
+                 <h4>ONLINE BANKING</h4>
+                 <p>Card Xpress comes complete <br> with a secure online banking <br> system. Manage beneficiaries, <br> send EFT's and make online <br> purchases. Contact us to find <br> out more or join below. </p>
+                 <a href="contact.com" class="btn" style="margin-top: 70px;">Start Now</a>
+             </div>
+    
+             <div class="part3">
+                 <h4>CARD XPRESS</h4>
+                 <p>Card Xpress includes <br> benefits such as real time <br> payments, ATM withdrawals, <br> second cards, mobile banking <br> as well as international usage. <br> Don't get left behind, apply <br> now and become part of the <br> Card Xpress revolution!</p>
+                 <a href="ready.com" class="btn" style="margin-top: 15px;"> Apply Now</a>
+             </div>
+         </div>
+     </div>
+
+     <div class="main-container" style="background-color: rgba(224, 214, 214, 1);">
+        <!-- #NAVBAR -->
+       <section>
+           <nav class="navbar navbar-expand-lg ">
+               <div class="container-fluid">
+                 <a class="navbar-brand" href="#"><img src="../static/img/Group 32.svg" alt=""></a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav">
+                     <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="{{ url_for('home') }}">Home</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">Library</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#" >Our Services</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link " href="#">Contact Us</a>
+                     </li>
+                   </ul>      
+                 </div>
+               </div>
+             </nav>
+       </section>
+    {% endblock %}

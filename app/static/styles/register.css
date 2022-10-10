@@ -1,0 +1,38 @@
+body{
+    background-color: rgba(12, 35, 72, 1);
+}
+.content-section{
+    background-color: rgba(12, 35, 72, 1);
+}
+.content-section .header .header-img{
+    background-color: white;
+    height: 70px;
+}
+.content-section .header{
+    text-align: center;
+}
+
+.content-section .header .header-text{
+    background-color: rgba(224, 214, 214, 1);
+    height: 100px;
+    padding-top: 25px;
+}
+
+.content-section .form-section{
+    width: 30%;
+    margin-left: 400px;
+}
+fieldset{
+    background-color: rgba(12, 35, 72, 1);
+}
+.content-section .form-section .form-group{
+    color: white;
+}
+.submit-section{
+    margin-left: 400px;
+    background-color: rgba(12, 35, 72, 1);
+    height: 70px;
+}
+.border{
+    text-align: center;
+}
